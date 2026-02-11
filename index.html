@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn An Toàn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+      BÁO TƯỜNG AN TOÀN SỐ
+     <div class="login-box" id="loginBox">
+     <form acction="login" method="POST">
+     <input type="text" placeholder="Tên đăng nhập" name="txtTen">
+     <input type="password" placeholder="Mật khẩu" name="txtMk">
+     <button>Đăng nhập</button>
+     </form>
+</div>
+</header>
+     <div class="main-container">
+        <div class="tabs-header">
+            <button class="tab-btn active" onclick="openTab('tab-trang-chu', this)">TRANG CHỦ</button>
+            <button class="tab-btn" onclick="openTab('tab-thoi-quen', this)">THÓI QUEN</button>
+            <button class="tab-btn" onclick="openTab('tab-hau-qua', this)">HẬU QUẢ</button>
+            <button class="tab-btn" onclick="openTab('tab-xu-ly', this)">CÁCH XỬ LÍ</button>
+            <button class="tab-btn" onclick="openTab('tab-video', this)">VIDEO</button>
+            <button class="tab-btn" onclick="openTab('tab-hoc-sinh', this)">GÓC HỌC SINH</button>
+        </div> 
+        <div id="tab-trang-chu" class="tab-content active">
+        <h1 class="home-title">An Toàn Số</h1>
+         <ul>
+            <li>An toàn thông tin số: Là quá trình sử dụng các biện pháp quản lý, kỹ thuật và công nghệ để bảo vệ dữ liệu hệ thống thông tin khỏi các hành vi truy cập, sử dụng, tiết lộ, phá hoại hoặc sửa đổi trái phép.
+
+            </li>
+           <li>Chúng ta đang sống trong thời đại mà mỗi cú click đều để lại dấu vết.
+          Chỉ một sơ suất nhỏ cũng có thể khiến tài khoản bị xâm nhập,
+          thông tin cá nhân bị khai thác hoặc trở thành nạn nhân của lừa đảo trực tuyến.
+           </li>
+           <li>Website này nhằm tổng hợp lại những kỹ năng tự vệ cơ bản nhất mà một học sinh
+          cần trang bị trước khi bước vào môi trường đại học và đi làm.
+           </li>   
+         <h3 class="home">Nội dung trọng tâm</h3>
+         <ul class="home-list">
+             <li>🔐 Thói quen cần nhận biết</li>
+             <li>🌐 Hậu quả để lại</li>
+             <li>💥 Nguy cơ mất an toàn</li>
+             <li>📶 Cách xử lí vấn đề</li>
+             <li>🛡 Bảo mật hai lớp (2FA)</li>
+             <li>⚖ Video điểm mới của luật an ninh mạng </li>
+             <li>📚 Góc chia sẻ</li>
+         </ul>
+  <p class="home-goal">
+    Mục tiêu của dự án là giúp người dùng
+    <strong>chủ động bảo vệ bản thân trên không gian số</strong>
+    một cách đơn giản và hiệu quả.
+  </p>
+  <div class="info-card">
+  <h3>Cảnh báo của công an</h3></div>
+    <iframe src="https://congan.lamdong.gov.vn/nguy-co-mat-an-toan-tren-khong-gian-mang-va-kien-thuc-co-ban-can-trang-bi-khi-su-dung-internet-N1741.aspx" width="100%" height="500px" style="border:none;"></iframe>
+                <a href="https://congan.lamdong.gov.vn/nguy-co-mat-an-toan-tren-khong-gian-mang-va-kien-thuc-co-ban-can-trang-bi-khi-su-dung-internet-N1741.aspx">Nguồn: https://congan.lamdong.gov.vn/nguy-co-mat-an-toan-tren-khong-gian-mang-va-kien-thuc-co-ban-can-trang-bi-khi-su-dung-internet-N1741.aspx</a>
+         </div>
+        <div id="tab-thoi-quen" class="tab-content">
+            <div class="info-card">
+                <h3>❗ Thói quen không an toàn</h3>
+                <ul>
+                    <li>Đăng nhập thông tin vào các trang web lạ.</li>
+                    <li>Đăng quá nhiều thông tin cá nhân lên các mạng xã hội.</li>
+                    <li>Sử dụng các loại wifi công cộng miễn phí.</li>
+                    <li>Dùng phần mềm không chính thống (crack).</li>
+                    <li>Cắm các USB, ổ đĩa lạ vào máy</li>
+                    <li>Tải các phần mềm, file ở các web không chính thống </li>
+                    <li>Truy cập các đường link lạ chưa xác thực </li>                    
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>✅ Biện pháp bảo vệ bản thân</h3>
+                <ul>
+                    <li>Sử dụng xác thực nhiều lớp (authenticator,sđt, email) <span class="tooltip">2FA<span class="tooltiptext">là phương thức bảo mật yêu cầu 2 mật khẩu khác nhau.</span></span></li>
+                    <li>Suy nghĩ thật kĩ trước khi truy cập một đường link nào.</li>
+                    <li>Không tải file lạ về máy.</li>
+                    <li>Kiểm soát thông tin chia sẻ trên mạng xã hội.</li>
+                    <li>Sử dụng mật khẩu riêng biệt cho từng tài khoản và thay đổi định kỳ</li>
+                    <li>Cài đặt phần mềm diệt virus uy tín.</li>
+                    <li>Đăng xuất tài khoản ngay sau khi sử dụng trên thiết bị công cộng.</li>
+                    <li>Sao lưu dữ liệu quan trọng định kỳ. </li>
+                </ul>
+            </div>
+        </div>
+        <div id="tab-hau-qua" class="tab-content">
+            <div class="info-card">
+                <h3>🔥 Nguy cơ nguy hiểm</h3>
+                <ul>
+                    <li>Máy tính bị cài mã độc, virus</li>
+                    <li>Mất quyên truy cập các tài khoản cá nhân (mxh, ngân hàng)</li>
+                    <li>Bị sử dụng danh tính để tham gia hoạt động trái pháp luật, lừa đảo</li>
+                    <li>Bị tống tiền, người thân bị lừa đảo</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Cảnh báo của Công an</h3>
+                <iframe src="https://nhandan.vn/lua-dao-tren-khong-gian-mang-va-nhung-he-luy-tiem-an-post928693.html" width="100%" height="500px" style="border:none;"></iframe>
+                <a href="https://nhandan.vn/lua-dao-tren-khong-gian-mang-va-nhung-he-luy-tiem-an-post928693.html">Nguồn: https://nhandan.vn/lua-dao-tren-khong-gian-mang-va-nhung-he-luy-tiem-an-post928693.html</a>
+            </div>
+        </div>
+        <div id="tab-xu-ly" class="tab-content">
+            <div class="info-card">
+                <h3>🛠 Cách xử lý khi gặp sự cố</h3>
+                <ul>
+                    <li>Giữ bình tĩnh, ngắt kết nối internet ngay lập tức.</li>
+                    <li>Thay đổi mật khẩu các tài khoản quan trọng khác.</li>
+                    <li>Liên hệ ngân hàng để khóa thẻ nếu liên quan tài chính.</li>
+                    <li>Báo cáo cho cơ quan chức năng hoặc bộ phận IT.</li>
+                    <li>Quét virus trong các ứng dụng diệt virus</li>
+                </ul>
+            </div>
+                      <div class="info-card">
+                <h3>Cách xử lí tốt nhất</h3>
+                <iframe src="https://nhandan.vn/special/phai-lam-gi-khi-bi-lua-dao-truc-tuyen/index.html" width="100%" height="500px" style="border:none;"></iframe>
+                <a href="https://nhandan.vn/special/phai-lam-gi-khi-bi-lua-dao-truc-tuyen/index.html">Nguồn: https://nhandan.vn/special/phai-lam-gi-khi-bi-lua-dao-truc-tuyen/index.html</a>
+            </div>
+        </div>  
+        <div id="tab-video" class="tab-content">
+            <div class="info-card">
+                <h3>Video: những điểm mới của luật an ninh mạng</h3>
+            <video src="video/video.mp4" controls width="800" height="450"></video>
+            </div>
+         </div>
+        <div id="tab-hoc-sinh" class="tab-content">
+            <div class="info-card">
+                <ul>
+                    <li>Là học sinh trong thời đại số, chúng em nhận thấy internet mang lại rất nhiều tiện ích nhưng cũng tiềm ẩn không ít rủi ro nếu chúng ta thiếu kiến thức và sự cảnh giác. Chính vì vậy, chúng em đã xây dựng trang web này với mong muốn chia sẻ những thông tin cơ bản, dễ hiểu về an toàn số, giúp mọi người – đặc biệt là các bạn học sinh – biết cách tự bảo vệ mình khi sử dụng không gian mạng.Chúng Em hy vọng rằng những nội dung trên trang web sẽ góp phần nâng cao ý thức, giúp việc sử dụng internet trở nên an toàn, lành mạnh và hiệu quả hơn.</li>
+                </ul>
+                <h3>“An toàn số hôm nay – Vững vàng tương lai ngày mai.”</h3>
+            </div>
+        </div>
+        <div class="footer">
+            © 2026 | Nhóm Bảo Huy 12/2
+        </div>
+    </div>
+    <script>
+        function openTab(tabId, btnElement) {
+            var contents = document.getElementsByClassName('tab-content'); 
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            var buttons = document.getElementsByClassName('tab-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            document.getElementById(tabId).classList.add('active');
+            btnElement.classList.add('active');
+        }
+    </script>
+</body>
+</html>
