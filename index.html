@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn An Toàn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+      <h1>BÁO TƯỜNG AN TOÀN SỐ</h1>
+      <button class="auth-btn" onclick="toggleBox()">Đăng nhập / Đăng ký</button>
+
+<div class="auth-box" id="authBox">
+    <div class="tabs">
+        <button type="button" onclick="showLogin()">Đăng nhập</button>
+        <button type="button" onclick="showRegister()">Đăng ký</button>
+    </div>
+    <form id="loginForm" onsubmit="login(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPass" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng nhập</button>
+    </form>
+     <form id="registerForm" onsubmit="register(event)" style="display:none;">
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPass" placeholder="Mật khẩu (ít nhất 6 ký tự)" minlength="6" required>
+        <button type="submit">Đăng ký</button>
+    </form>
+</div>
+
+<p id="welcomeUser" style="position:absolute; top:15px; right:20px;"></p>
+
+     <div class="main-container">
+            <button class="tab-btn active" onclick="openTab('tab-trang-chu', this)">TRANG CHỦ</button>
+            <button class="tab-btn" onclick="openTab('tab-thoi-quen', this)">NHẬN BIẾT</button>
+            <button class="tab-btn" onclick="openTab('tab-hau-qua', this)">HẬU QUẢ</button>
+            <button class="tab-btn" onclick="openTab('tab-xu-ly', this)">CÁCH XỬ LÍ</button>
+            <button class="tab-btn" onclick="openTab('tab-video', this)">LUẬT ANM</button>
+            <button class="tab-btn" onclick="openTab('tab-hoc-sinh', this)">GÓC HỌC SINH</button>
+            <button class="tab-btn" onclick="openTab('tab-nhom', this)">NHÓM</button>
+        </div>
+    </header>
+    <main>
+        <div id="tab-trang-chu" class="tab-content active">
+            <h1 class="home-title">An toàn số hôm nay – Vững vàng tương lai ngày mai</h1>
+            <div class="image-card">
+    <img src="video/antoanso.jfif">
+</div>
+                <ul>
+                    <li>Là học sinh trong thời đại số, chúng em nhận thấy internet mang lại rất nhiều tiện ích nhưng cũng tiềm ẩn không ít rủi ro nếu chúng ta thiếu kiến thức và sự cảnh giác. Chính vì vậy, chúng em đã xây dựng trang web này với mong muốn chia sẻ những thông tin cơ bản, dễ hiểu về an toàn số, giúp mọi người – đặc biệt là các bạn học sinh – biết cách tự bảo vệ mình khi sử dụng không gian mạng.Chúng Em hy vọng rằng những nội dung trên trang web sẽ góp phần nâng cao ý thức, giúp việc sử dụng internet trở nên an toàn, lành mạnh và hiệu quả hơn.</li>
+                
+            
+
+<li>→ Xuất phát từ thông điệp đó, nhóm chúng em đã xây dựng trang web "An toàn số". Đây không chỉ là một sản phẩm công nghệ, mà còn là một "Cẩm nang số" luôn sẵn sàng đồng hành, giúp các bạn học sinh chủ động trang bị kỹ năng tự bảo vệ mình giữa kỷ nguyên bùng nổ thông tin như hiện nay.</li>
+</ul>
+        <h1 class="home-title">An Toàn Số là gì?</h1>
+         <ul>
+            <li>An toàn thông tin số: Là quá trình sử dụng các biện pháp quản lý, kỹ thuật và công nghệ để bảo vệ dữ liệu hệ thống thông tin khỏi các hành vi truy cập, sử dụng, tiết lộ, phá hoại hoặc sửa đổi trái phép.
+
+            </li>
+           <li>Chúng ta đang sống trong thời đại mà mỗi cú click đều để lại dấu vết.
+          Chỉ một sơ suất nhỏ cũng có thể khiến tài khoản bị xâm nhập,
+          thông tin cá nhân bị khai thác hoặc trở thành nạn nhân của lừa đảo trực tuyến.
+           </li>
+           <li>Website này nhằm tổng hợp lại những kỹ năng tự vệ cơ bản nhất mà một học sinh
+          cần trang bị trước khi bước vào môi trường đại học và đi làm.
+           </li>  
+           <li><strong>Trang web chính thức của Bộ Công an về an ninh mạng:</strong></li>
+           <div class="gov-card">
+    <a href="https://bocongan.gov.vn/chinh-sach-phap-luat/tag/701" target="_blank">
+        
+        <div class="browser-bar">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="url">bocongan.gov.vn</div>
+        </div>
+
+        <div class="card-image">
+            <img src="video/anh.jpg" alt="Bộ Công An">
+        </div>
+
+        <div class="card-button">
+            BẤM ĐỂ TRUY CẬP CỔNG TTĐT →
+        </div>
+
+    </a>
+</div> 
+         <h3 class="home">Nội dung trọng tâm</h3>
+         <ul class="home-list">
+             <li>🔐 Thói quen cần nhận biết</li>
+             <li>🌐 Hậu quả để lại</li>
+             <li>💥 Nguy cơ mất an toàn</li>
+             <li>📶 Cách xử lí vấn đề</li>
+             <li>🛡 Bảo mật hai lớp (2FA)</li>
+             <li>⚖ Video điểm mới của luật an ninh mạng </li>
+             <li>📚 Góc chia sẻ</li>
+         </ul>
+  <p class="home-goal">
+    Mục tiêu của dự án là giúp người dùng
+    <strong>chủ động bảo vệ bản thân trên không gian số</strong>
+    một cách đơn giản và hiệu quả.
+  </p>
+  <div class="info-card">
+  <h3>Cảnh báo của công an</h3>
+    <iframe src="https://congan.lamdong.gov.vn/nguy-co-mat-an-toan-tren-khong-gian-mang-va-kien-thuc-co-ban-can-trang-bi-khi-su-dung-internet-N1741.aspx" width="100%" height="500px" style="border:none;"></iframe>
+                
+  </div>
+         </div>
+        <div id="tab-thoi-quen" class="tab-content">
+            <div class="info-card">
+                <h3>🔎 NHẬN BIẾT NGUY CƠ TRÊN KHÔNG GIAN MẠNG</h3>
+                <p>Tin nhắn hoặc email đáng ngờ:</p>
+                <ul>
+                    <li>Nội dung thúc giục hành động gấp (ví dụ: “Tài khoản sẽ bị khóa ngay!”)</li>
+                    <li>Yêu cầu cung cấp mật khẩu, mã OTP hoặc thông tin cá nhân</li>
+                    <li>Đường link lạ, sai chính tả hoặc không rõ nguồn gốc</li>
+                </ul>
+                <div class="image-card">
+    <img src="video/fakemail.webp">
+</div>
+    
+            </div>
+
+            <div class="info-card">
+                <h3>❗ Thói quen không an toàn</h3>
+                <ul>
+                    <li>Đăng nhập thông tin vào các trang web lạ.</li>
+                    <li>Đăng quá nhiều thông tin cá nhân lên các mạng xã hội.</li>
+                    <li>Sử dụng các loại wifi công cộng miễn phí.</li>
+                    <li>Dùng phần mềm không chính thống (crack).</li>
+                    <li>Cắm các USB, ổ đĩa lạ vào máy</li>
+                    <li>Tải các phần mềm, file ở các web không chính thống.</li>
+                    <li>Truy cập các đường link lạ chưa xác thực.</li>
+                    <li>Sao lưu dữ liệu quan trọng định kỳ. </li>
+                </ul>
+            </div>
+        </div>
+        <div id="tab-hau-qua" class="tab-content">
+            <div class="info-card">
+                <h3>⚠ Lời cảnh báo: Hậu quả & Nguy cơ nguy hiểm trên không gian mạng</h3>
+                <p><strong>1. Mất tiền & Tài sản 💸</strong></p>
+                <ul>
+                    <li>Khi nhấn vào các đường link giả mạo, người dùng có thể bị đánh cắp thông tin tài khoản ngân hàng, ví điện tử hoặc mã OTP.</li>
+                    <li>Kẻ gian có thể thực hiện giao dịch trái phép chỉ trong vài phút.</li>
+                </ul>
+                <p><strong>👉 Hậu quả:</strong> Mất tiền nhanh chóng và khó lấy lại.</p>
+                <div class="image-card">
+    <img src="video/money.jpg">
+</div>
+<p><strong>2. Nghiện mạng xã hội & Giảm tập trung 📱</strong></p>
+                <ul>
+                    <li>Sử dụng mạng xã hội quá mức làm giảm khả năng tập trung.</li>
+                    <li>Dễ bị cuốn theo tin giả, nội dung độc hại.</li>
+                </ul>
+                <p><strong>👉 Hậu quả:</strong> Giảm hiệu suất học tập, mất định hướng và dễ bị thao túng tâm lý.</p>
+                
+<p><strong>3. Tống tiền & Đe doạ tâm lý 😰</strong></p>
+                <ul>
+                    <li>Kẻ xấu lợi dụng hình ảnh, video riêng tư hoặc deepfake để đe doạ.</li>
+                    <li>Yêu cầu chuyển tiền nếu không sẽ phát tán thông tin.</li>
+                </ul>
+                <p><strong>👉 Hậu quả:</strong> Áp lực tinh thần, lo lắng kéo dài, ảnh hưởng đến học tập và cuộc sống.</p>
+                <div class="image-card">
+    <img src="video/depressed.jpg">
+</div>
+<p><strong>4. Lộ thông tin cá nhân 🔓</strong></p>
+                <ul>
+                    <li>Họ tên, số CCCD, số điện thoại, địa chỉ, hình ảnh riêng tư có thể bị thu thập và sử dụng trái phép.</li>
+                    <li>Thông tin bị rao bán trên các diễn đàn ngầm.</li>
+                </ul>
+                <p><strong>👉 Hậu quả:</strong> Bị mạo danh vay tiền, đăng ký tài khoản xấu hoặc thực hiện hành vi phạm pháp dưới danh nghĩa của bạn.</p>
+                <div class="image-card">
+    <img src="video/leaked.png">
+</div>
+<p><strong>5. Nguy cơ từ công nghệ Deepfake & AI 🤖</strong></p>
+                <ul>
+                    <li>Video, giọng nói giả mạo giống người thật đến 90-95%.</li>
+                    <li>Gọi điện khẩn cấp yêu cầu chuyển tiền gấp.</li>
+                </ul>
+                <p><strong>👉 Hậu quả:</strong> Bị mạo danh vay tiền, gia đình hoang mang, chuyển tiền vội vàng và bị chiếm đoạt tài sản.</p>
+                
+
+            </div>
+            <div class="info-card">
+                <h3>Cảnh báo của Công an</h3>
+                <iframe src="https://nhandan.vn/lua-dao-tren-khong-gian-mang-va-nhung-he-luy-tiem-an-post928693.html" width="100%" height="500px" style="border:none;"></iframe>
+                
+            </div>
+        </div>
+        <div id="tab-xu-ly" class="tab-content">
+            <div class="info-card">
+                <h3>✅ Biện pháp bảo vệ bản thân</h3>
+                <ul>
+                    <li>Sử dụng xác thực nhiều lớp (authenticator,sđt, email) 2FA</li>
+                    <li>Suy nghĩ thật kĩ trước khi truy cập một đường link nào.</li>
+                    <li>Không tải file lạ về máy.</li>
+                    <li>Kiểm soát thông tin chia sẻ trên mạng xã hội.</li>
+                    <li>Sử dụng mật khẩu riêng biệt cho từng tài khoản và thay đổi định kỳ</li>
+                    <li>Cài đặt phần mềm diệt virus uy tín.</li>
+                    <li>Đăng xuất tài khoản ngay sau khi sử dụng trên thiết bị công cộng.</li>
+                    <li>Sao lưu dữ liệu quan trọng định kỳ. </li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>🛠 Cách xử lý khi gặp sự cố</h3>
+                <ul>
+                    <li>1. Giữ bình tĩnh, ngắt kết nối internet ngay lập tức.</li>
+                    </ul>
+                    <div class="image-card">
+    <img src="video/internet.webp">
+</div>
+<ul>
+                    <li>Thay đổi mật khẩu các tài khoản quan trọng khác.</li>
+                    </ul>
+                    <div class="image-card">
+    <img src="video/password.jfif">
+</div>
+<ul>
+                    <li>Liên hệ ngân hàng để khóa tài khoản nếu liên quan tài chính.</li>
+                    </ul>
+                   <div class="image-card">
+    <img src="video/calling.jpg">
+</div>
+<ul>
+                    <li>Quét virus trong các ứng dụng diệt virus</li>
+                </ul>
+                <div class="image-card">
+    <img src="video/virus.avif">
+</div>
+            </div>
+                      <div class="info-card">
+                <h3>Cách xử lí được đề xuất</h3>
+                <iframe src="https://nhandan.vn/special/phai-lam-gi-khi-bi-lua-dao-truc-tuyen/index.html" width="100%" height="500px" style="border:none;"></iframe>
+            </div>
+        </div>  
+        <div id="tab-video" class="tab-content">
+            <div class="info-card">
+                <h3>📺 Video: Tóm tắt Luật An Ninh Mạng</h3>
+            <video src="video/video.mp4" controls width="800" height="450"></video>
+            <p>Luật An ninh mạng đã chính thức có hiệu lực. Là học sinh, chúng ta cần biết những gì để tránh vô tình vi phạm? Cùng xem video ngắn gọn dưới đây nhé:</p>
+            <h3>🚫 3 Hành vi TUYỆT ĐỐI CẤM (Điều 8):</h3>
+            <ul>
+                <li><strong>Thông tin sai sự thật:</strong> Tung tin đồn nhảm, gây hoang mang dư luận (Ví dụ: tin giả về dịch bệnh, thiên tai, hoặc vu khống người khác).</li>
+                <li><strong>Kích động, chống phá:</strong> Đăng tải nội dung xúc phạm Quốc kỳ, Quốc huy, lãnh tụ hoặc kêu gọi bạo loạn, phá rối an ninh.</li>
+                <li><strong>Chiếm đoạt tài khoản:</strong> Hack nick, đánh cắp mật khẩu hoặc phát tán mã độc (virus) phá hoại hệ thống mạng.</li>
+            </ul>
+            </div>
+         </div>
+        <div id="tab-hoc-sinh" class="tab-content">
+            <div class="info-card">
+                <h3>🌱 Thông điệp gửi đến các bạn học sinh:</h3> 
+              <p>Trong thời đại công nghệ phát triển mạnh mẽ, Internet không chỉ là nơi học tập và giải trí mà còn là không gian sống thứ hai của mỗi chúng ta. Tuy nhiên, bên cạnh những lợi ích to lớn, môi trường số cũng tiềm ẩn rất nhiều rủi ro như lừa đảo, đánh cắp thông tin, bạo lực mạng hay công nghệ giả mạo tinh vi.</p>
+        <p>Vì vậy, mỗi học sinh cần trang bị cho mình kiến thức và kỹ năng an toàn số. Hãy suy nghĩ kỹ trước khi chia sẻ thông tin cá nhân, kiểm chứng nguồn tin trước khi tin tưởng, và luôn cảnh giác với những lời mời gọi hấp dẫn nhưng thiếu minh bạch. Một cú nhấp chuột có thể mở ra cơ hội, nhưng cũng có thể dẫn đến nguy hiểm nếu chúng ta thiếu hiểu biết.</p>
+        <p>An toàn số không phải là điều quá xa vời, mà bắt đầu từ những thói quen nhỏ hằng ngày: đặt mật khẩu mạnh, không cung cấp mã OTP cho người khác, không truy cập vào các đường link đáng ngờ, và mạnh dạn báo cáo khi phát hiện hành vi xấu.</p>
+        <p>Hãy trở thành những công dân số thông minh, văn minh và có trách nhiệm.</p>
+        <h3>💭 Cảm nghĩ sâu sắc về chủ đề “An toàn số”:</h3>
+        <p>Khi thực hiện website “An toàn số”, em nhận ra rằng nhiều bạn học sinh vẫn còn khá chủ quan trước các nguy cơ trên mạng. Chúng ta thường nghĩ rằng những vụ lừa đảo hay đánh cắp thông tin chỉ xảy ra với người lớn, nhưng thực tế học sinh cũng là đối tượng dễ bị nhắm đến.</p>
+        <p>Qua quá trình tìm hiểu, em hiểu rằng kiến thức chính là “lá chắn” vững chắc nhất. Nếu mỗi người đều được trang bị kỹ năng nhận biết và phòng tránh, không gian mạng sẽ trở nên an toàn và tích cực hơn rất nhiều.</p>
+        <p>Website này không chỉ là một sản phẩm học tập, mà còn là mong muốn của em trong việc lan tỏa nhận thức về an toàn số đến bạn bè xung quanh. Em hy vọng rằng, sau khi truy cập website, mỗi bạn học sinh sẽ biết cách tự bảo vệ mình và giúp đỡ người khác khi gặp rủi ro trên không gian mạng.</p>
+            </div>
+        </div>
+        <div id="tab-nhom" class="tab-content">
+        <div class="info-card">
+            <h3>Nhóm Bảo Huy 12/2</h3>
+            <ul>
+                <li>📝 Bảo Huy: Xem ý tưởng, lập trình trang web</li>
+                <li>🎨 Anh Hoàng: Thiết kế bố cục, hỗ trợ lập trình</li>
+                <li>🌐 Ngọc Tân: Sưu tầm hình ảnh, video, bài báo</li>
+                <li>🔗 Hoàng Long: Chọn lọc nội dung, viết thông tin</li>
+            </ul>
+            </div>
+            </div>
+    
+    </div>
+    <script>
+        function openTab(tabId, btnElement) {
+            var contents = document.getElementsByClassName('tab-content'); 
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            var buttons = document.getElementsByClassName('tab-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            document.getElementById(tabId).classList.add('active');
+            btnElement.classList.add('active');
+        }
+        function toggleBox() {
+    const box = document.getElementById("authBox");
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+
+function showLogin() {
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("registerForm").style.display = "none";
+}
+
+function showRegister() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "block";
+}
+
+function register(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("registerEmail").value;
+    const pass = document.getElementById("registerPass").value;
+     localStorage.setItem("email", email);
+    localStorage.setItem("password", pass);
+
+    alert("Đăng ký thành công!");
+    showLogin();
+}
+
+function login(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("loginEmail").value;
+    const pass = document.getElementById("loginPass").value;
+
+    const savedEmail = localStorage.getItem("email");
+    const savedPass = localStorage.getItem("password");
+
+    if (email === savedEmail && pass === savedPass) {
+        document.getElementById("welcomeUser").innerText =
+            "Xin chào, " + email;
+
+        document.getElementById("authBox").style.display = "none";
+    } else {
+        alert("Sai email hoặc mật khẩu!");
+    }
+}
+window.onload = function() {
+    const savedEmail = localStorage.getItem("email");
+    if(savedEmail){
+        document.getElementById("welcomeUser").innerText =
+            "Xin chào, " + savedEmail;
+    }
+};
+    </script>
+    </main>
+   <footer class="site-footer">
+    <div class="footer-inner">
+        © 2026 | <strong>Bảo Huy 12/2</strong>
+    </div>
+</footer>
+</body>
+</html>
